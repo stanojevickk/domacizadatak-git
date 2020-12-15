@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cvećara Nina</title>
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+<body>
+	<header>
+		<h2><a href="./index.html">Cvećara Nina</a></h2>
+		
+		<ul>
+			<li><a href="./index.html">Početna</a></li>
+			<li><a href="./cvece.html">Cveće</a></li>
+			<li><a href="./oNama.html">O nama</a></li>
+			<li><a href="./kontakt.html">Kontakt</a></li> 
+		</ul>
+	</header>
+
+	<section class="kontakt-area">
+        <div class="kontakt-img"></div>
+            <div class="forma">
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form id="form">
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" id="username">
+                            <label for="">Username</label>
+                            <span>Username</span>
+                            <small>Greška</small>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" id="email">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                            <small>Greška</small>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" id="phone">
+                            <label for="">Telefon</label>
+                            <span>Telefon</span>
+                            <small>Greška</small>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea type="message" class="input" id="message"></textarea>
+                            <label for="">Poruka</label>
+                            <span>Poruka</span>
+                            <small>Greška</small>
+                        </div>
+                        <input type="submit" value="Posalji" class="btn"/>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <script src="js/formaValidation.js"></script>
+    <script src="js/forma.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'countryside_tworegular';
+    src: url('../fonts/countrysidetwo-r9wo-webfont.woff2') format('woff2'),
+         url('../fonts/countrysidetwo-r9wo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'countryside_tworegular';
+}
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+}
+
+header ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+header ul li {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 25px;
+}
+
+header ul li:first-child {
+    margin-left: 0;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a:hover {
+    color: wheat;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+}
+
+/*Cvece*/
+
+section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+.cvece-area {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #000;
+    text-align: center;
+}
+
+.cvece-area .cvece-img {
+    background-image: url(../res/flowerPic.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: honeydew;
+    justify-content: center;
+    max-width: 25rem;
+    min-width: 18rem;
+    margin: 10px;
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    section {
+        padding: 120px 50px;
+    }
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h2 {
+        margin-bottom: 15px;
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 140px 30px;
+    }
+}

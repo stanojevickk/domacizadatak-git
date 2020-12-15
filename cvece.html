@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cvećara Nina</title>
+    <link rel="stylesheet" href="css/cvece.css">
+    <script src="js/jquerry.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header>
+		<h2><a href="./index.html">Cvećara Nina</a></h2>
+		
+		<ul>
+			<li><a href="./index.html">Početna</a></li>
+			<li><a href="./cvece.html">Cveće</a></li>
+			<li><a href="./oNama.html">O nama</a></li>
+			<li><a href="./kontakt.html">Kontakt</a></li> 
+		</ul>
+	</header>
+
+	<section class="cvece-area">
+        <div class="cvece-img"></div>
+        <div class="container">
+            <div class="box">
+                <a href="res/ruza.jpg" rel="prettyPhoto"><img src="res/ruza.jpg"></a>
+                <h3>Ruža</h3>
+            </div>
+            <div class="box">
+                <a href="res/hortenzija.jpg" rel="prettyPhoto"><img src="res/hortenzija.jpg"></a>
+                <h3>Hortenzija</h3>
+            </div>
+            <div class="box">
+                <a href="res/kala.jpg" rel="prettyPhoto"><img src="res/kala.jpg"></a>
+                <h3>Kala</h3>
+            </div>
+            <div class="box">
+                <a href="res/lala.jpg" rel="prettyPhoto"><img src="res/lala.jpg"></a>
+                <h3>Lala</h3>
+            </div>
+            <div class="box">
+                <a href="res/lizijantus.jpg" rel="prettyPhoto"><img src="res/lizijantus.jpg"></a>
+                <h3>Lizijantus</h3>
+            </div>
+            <div class="box">
+                <a href="res/orhideja.jpg" rel="prettyPhoto"><img src="res/orhideja.jpg"></a>
+                <h3>Orhideja</h3>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){ //implementacija plagina
+          $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+    </script>
+</body>
+</html>
